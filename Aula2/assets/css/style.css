@@ -1,0 +1,26 @@
+/*.rounded{
+	border-radius: 10px;
+	width: 100px;
+    height: 100px;
+    border: 1px solid;
+    background-color: red;
+}*/
+
+body{
+	margin: 0;
+}
+
+.background{
+	width: 100%;
+	min-height: 1080px;
+	background-image: url(../img/barbaro.png), url(../img/background.jpg);
+	background-position: 100px 100px, right bottom;
+	background-repeat: no-repeat, repeat;
+	background-attachment: fixed, scroll;
+
+}
+
+.quadrado{
+	height: 100px;
+	width : 100px;
+}
