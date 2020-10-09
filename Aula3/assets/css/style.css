@@ -1,0 +1,80 @@
+#fieldset1 div{
+	height: 150px;
+	width: 150px;
+	box-shadow: 10px 10px 15px black;
+	float: left;
+	margin-right: 25px;
+}
+
+#fieldset1{
+	padding-bottom: 50px;
+	margin-bottom: 20px;
+}
+
+.bd1{
+	background: linear-gradient(red, yellow); /* Syntax padrão */
+}
+
+.bd2{
+	background: linear-gradient(to right, red, yellow); /* Syntax padrão - Da esquerda para a direita */
+}
+
+.bd3{
+	background: linear-gradient(to bottom, red, yellow); /* Syntax padrão - De baixo para cima */
+}
+
+.bd4{
+	background: linear-gradient(to bottom right, red, yellow);  Syntax padrão - Diagonal 
+}
+
+.bd5{
+	background: linear-gradient(-130deg, red, yellow); /* Syntax padrão - Com ângulos */
+}
+
+.bd6{
+	background: linear-gradient(green, red, yellow); /* Syntax padrão - Multiplas cores */
+}
+
+.bd7{
+	background: radial-gradient(green, red, yellow); /* Syntax padrão - Multiplas cores */
+}
+
+#titulo1{
+	text-shadow: 2px 2px 10px red;
+}
+
+#titulo2{
+	font-size: 50px;
+	color: #033d3f;
+	text-shadow: 0 0 7px #11eaf2;
+}
+
+.scroll{
+	overflow: scroll;
+}
+
+.scroll2{
+	overflow: hidden;
+}
+
+.box-1, .box-2{
+	width: 200px;
+	height: 200px;
+	border: 1px solid #333;
+}
+
+#fieldset2{
+	height: 2000px;
+}
+
+.box-1{
+	z-index: 10;
+	position: absolute;
+	background-color: red;
+}
+
+.box-2{
+	margin: 10px;
+	background-color: yellow;
+	position: fixed;
+}
