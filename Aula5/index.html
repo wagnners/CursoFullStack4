@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Aula 5 - Formulários</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+	<form action="pagina.php" target="_blank" method="GET">
+		
+<!-- 		<fieldset>
+
+			<legend>Primeiro Formulário</legend>
+ -->		
+ 			<div>
+				<label>Nome:</label>
+				<input type="text" name="nome" maxlength="10" placeholder="Informe seu nome">
+			</div>
+
+			<div>
+				<label>Sobrenome:</label>
+				<input type="text" name="sobrenome" value="Silva" readonly>
+			</div>
+
+			<div>
+				<label>Idade:</label>
+				<input type="number" name="idade">
+			</div>
+
+			<div>
+				<label>Quantidade de carros</label>
+				<select name="qtd_carros">
+					<option value="0">0 (zero)</option>
+					<option value="1">1 - Um</option>
+					<option value="2" selected>2 - Two</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+
+			<div>
+				<textarea nome="obs" rows="10"></textarea>
+			</div>
+
+			<button type="submit">Enviar Resposta</button>
+<!-- 			<input type="submit" value="Enviar"> -->
+<!-- 		</fieldset> -->
+	</form>
+</body>
+</html>
