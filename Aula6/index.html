@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Aula 6 - JavaScript</title>
+</head>
+<body>
+
+<!-- VARIÁVEIS -->
+
+<!--
+	<div id="paragrafo"></div>
+
+	<div id="tamanho"></div> -->
+
+
+<!-- OPERADORES	-->
+
+<!--
+	<p id="soma"></p>
+	<p id="subtracao"></p>
+	<p id="multiplicação"></p>
+	<p id="divisão"></p> -->
+
+
+<!-- OPERADORES: INCREMENTAIS e DECREMENTAIS -->
+
+<!-- 	
+	<p id="increm"></p>
+	<p id="decrem"></p> -->
+
+<!-- COMPARAÇÕES -->
+
+	
+	<p id="igual"></p>
+	<p id="tipo_e_valor_igual"></p>
+	<p id="diferente"></p>
+	<p id="tipo_e_valor_diferente"></p>
+	<p id="maior"></p>
+	<p id="maior_e_igual"></p>
+	<p id="menor"></p>
+	<p id="menor_e_igual"></p>
+
+	<script type="text/javascript">
+		
+		var frase 	= "Esse é meu carro";
+		var carro 	= "BMW 320i";
+		var ano 	= 2020;
+		var valor 	= 500.68935;
+
+		// console.log(typeof(valor));
+
+		var texto = "<p>" + frase + "</p>" + "<p>" + carro + "</p>" + "Ano: " + ano;
+
+		// document.getElementById("paragrafo").innerHTML = texto;
+
+		// document.getElementById("tamanho").innerHTML = texto.length;
+
+
+		// OPERADORES
+
+		var y = 5;
+		var x = 10;
+
+		// document.getElementById("soma").innerHTML = "Soma: 5+10+50= " + (y + x + 50);
+		// document.getElementById("subtracao").innerHTML = "Subtração: 10-5=" + (x - y);
+
+		// document.getElementById("subtracao").innerHTML = "Multiplicação: (10+5)*5=" + ((x + y) * y);	
+		// document.getElementById("divisão").innerHTML = "Divisão: (10+5)/5=" + ((x + y) / y);
+
+		// var count = 0;
+		// count++; // count = count + 1;
+		// document.getElementById("increm").innerHTML = "count++: " + count;
+
+		// var decrem = 10;
+		// decrem--; // count = count + 1;
+		// document.getElementById("decrem").innerHTML = "decrem--: " + decrem; 
+
+		// document.getElementById("igual").innerHTML = y == x;
+		// document.getElementById("igual").innerHTML = y+5 == x;
+
+		y = 10;
+		x = 10;
+
+		// document.getElementById("tipo_e_valor_igual").innerHTML = y === x;
+
+		x = "15";
+		y = 15;
+
+		// document.getElementById("diferente").innerHTML = y != x;
+		// document.getElementById("tipo_e_valor_diferente").innerHTML = y !== x;
+
+		x = 35;
+		y = 35;
+
+		// document.getElementById("maior").innerHTML = "35 > 35 - X maior que y? " + (x > y);
+		// document.getElementById("maior_e_igual").innerHTML = "35 >= 35 - X maior ou igual que y? " + (x >= y);
+
+
+		x = 80;
+		y = 40;
+		z = 10;
+
+
+		// document.getElementById("menor").innerHTML = "X maior que y? 80 < 40 " + (x < y);
+		// document.getElementById("menor_e_igual").innerHTML = "X maior ou igual que y? 80 <= 40 " + (x <= y);
+
+
+		// var resultado;
+
+		// if(x < ys){
+		// 	resultado = "VERDADEIRO";
+		// }else{
+		// 	resultado = "FALSO";
+		// }
+
+		// alert(resultado);
+
+
+		var resultado = x < y ? "VERDADEIRO" : "FALSO";
+
+		
+		x = 10;
+		// x += 10; // x = x + 10 = 10;
+		// x -= 10; // x = x - 10 / 10 - 10;
+		// x *= 10; // x = x * 10;
+		// x /= 10; // x = x / 10;
+
+		x += " isso é uma concatenação.";
+		
+		console.log(x);
+	</script>
+</body>
+</html>
