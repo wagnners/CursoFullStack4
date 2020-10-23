@@ -8,6 +8,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.css">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/cover.css" rel="stylesheet">
@@ -15,10 +16,10 @@
 
   <body class="text-center">
 
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Cover</h3>
+  <div class="d-flex h-100 w-100 mx-auto flex-column">
+      <header class="masthead mb-auto p-3">
+        <div class="inner container ">
+          <h3 class="masthead-brand">Logo</h3>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">Features</a>
@@ -27,17 +28,107 @@
         </div>
       </header>
 
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
+      <main role="main">
+        <section class="banner">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/por_do_sol.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/por_do_sol_2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/por_do_sol_3.jpg" class="d-block w-100" alt="...">
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+        <section class="section2 my-5">
+            <h3 class="mb-3">Section 2</h3>
+            <div class="container">
+              <div class="row">
+                <div class="col-4"><div class="imagem imagem1"></div></div>
+                <div class="col-4"><div class="imagem imagem2"></div></div>
+                <div class="col-4"><div class="imagem imagem3"></div></div>
+              </div>
+            </div>
+        </section>
+        <section class="section3 my-5">
+            <h3 class="mb-3">Section 3</h3>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              <div>
+            </div>
+        </section>
       </main>
 
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <footer class="text-center">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <h5>Menu</h5>
+              <ul>
+                <li><a href="page2.php">Page 2</a></li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+
+              </ul>
+            </div>
+            <div class="col-4">
+              <h5>Informações</h5>
+              <ul>
+                <li><a href="page2.php">Page 2</a></li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+
+              </ul>
+            </div>
+            <div class="col-4">
+              <h5>Redes Sociais</h5>
+              <div class="row">
+                <div class="col-6">
+                  <i class="fa fa-instagram float-right" aria-hidden="true"></i>
+                </div>
+                <div class="col-6">
+                  <i class="fa fa-facebook float-left" aria-hidden="true"></i>
+                </div>
+                <div class="col-6">
+                  <i class="fa fa-twitter float-right" aria-hidden="true"></i>
+                </div>
+                <div class="col-6">
+                  <i class="fa fa-google-plus float-left" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>     
         </div>
       </footer>
     </div>

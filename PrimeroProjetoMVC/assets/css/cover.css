@@ -13,10 +13,10 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  background-color: #333;
+  border: .05rem solid #333;
 }
 
 
@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #fff;
 }
 
 body {
@@ -37,9 +37,7 @@ body {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   justify-content: center;
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  color: #333;
 }
 
 .cover-container {
@@ -61,7 +59,7 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, .5);
+  color: rgb(0 0 0 / 50%);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
@@ -76,8 +74,8 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #333;
+  border-bottom-color: #333;
 }
 
 @media (min-width: 48em) {
@@ -107,4 +105,52 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+.section2 .imagem{
+    height: 500px;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+.section2 .imagem1{
+  background-image: url(../img/img1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.section2 .imagem2{
+  background-image: url(../img/img2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.section2 .imagem3{
+  background-image: url(../img/img3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.section3 p{
+  text-align: justify;
+}
+
+footer ul{
+  display: inline-block; 
+  text-align: left;
+}
+
+footer a{
+  color: #333;
+}
+
+footer a:hover{
+  color: #333;
+}
+
+footer i.fa{
+  font-size: 35px;
+  margin: 10px;
 }
