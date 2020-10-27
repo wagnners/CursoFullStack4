@@ -11,7 +11,7 @@
 // define('LOCAL_URL', '/PrimeiroProjetoFullStack');
 
 if($env == "dev"){
-	define('LOCAL_URL', '/PrimeiroProjetoFullStack');
+	define('LOCAL_URL', '/PrimeroProjetoMVC');
 }
 elseif($env == "prod"){
 	define('LOCAL_URL', 'https://www.google.com.br/');

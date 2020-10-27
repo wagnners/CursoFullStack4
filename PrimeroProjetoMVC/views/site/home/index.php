@@ -1,3 +1,4 @@
+<?php $url = $this->helpers['URLHelper']->getURL(); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -21,9 +22,10 @@
         <div class="inner container ">
           <h3 class="masthead-brand">Logo</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link active" ref="<?php echo $url; ?>/">Home</a>
+            <a class="nav-link" href="#">Registro</a>
+            <a class="nav-link" href="<?php echo $url; ?>/contato">Contato</a>
+            <a class="nav-link" href="">Login</a>
           </nav>
         </div>
       </header>
@@ -57,13 +59,13 @@
             <h3 class="mb-3">Section 2</h3>
             <div class="container">
               <div class="row">
-                <div class="col-4"><div class="imagem imagem1"></div></div>
-                <div class="col-4"><div class="imagem imagem2"></div></div>
-                <div class="col-4"><div class="imagem imagem3"></div></div>
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-5 mb-md-0 mb-lg-0 mb-xl-0"><div class="imagem imagem1"></div></div>
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-5 mb-md-0 mb-lg-0 mb-xl-0"><div class="imagem imagem2"></div></div>
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4"><div class="imagem imagem3"></div></div>
               </div>
             </div>
         </section>
-        <section class="section3 my-5">
+        <section class="section3">
             <h3 class="mb-3">Section 3</h3>
             <div class="container">
               <div class="row justify-content-center">
@@ -85,33 +87,41 @@
               <div>
             </div>
         </section>
+         <section class="section4">
+            <h3 class="mb-3">Contato</h3>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                   <i class="fa fa-whatsapp" aria-hidden="true"></i><p>(49) 99999-9999</p>
+                </div>
+                <div class="col-12 my-3">
+                  <i class="fa fa-telegram" aria-hidden="true"></i><p>(49) 99999-9999</p>
+                </div>      
+              </div>
+
+              <button type="button" class="btn btn-primary my-3">Ver Mais</button>
+            </div>
+        </section>
       </main>
 
       <footer class="text-center">
 
         <div class="container">
           <div class="row">
-            <div class="col-4">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5 mb-md-0 mb-lg-0 mb-xl-0">
               <h5>Menu</h5>
-              <ul>
-                <li><a href="page2.php">Page 2</a></li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-
-              </ul>
+              <a href="page2.php">Home</a>
+              <a href="page2.php">Registro</a>
+              <a href="page2.php">Contato</a>
+              <a href="page2.php">Login</a>
             </div>
-            <div class="col-4">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5 mb-md-0 mb-lg-0 mb-xl-0">
               <h5>Informações</h5>
-              <ul>
-                <li><a href="page2.php">Page 2</a></li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
+              <p>Fone: (49) 99999-9999</p>
+              <p>Lages - SC</p>
 
-              </ul>
             </div>
-            <div class="col-4">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
               <h5>Redes Sociais</h5>
               <div class="row">
                 <div class="col-6">

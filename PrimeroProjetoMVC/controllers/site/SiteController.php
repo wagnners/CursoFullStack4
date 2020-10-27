@@ -17,4 +17,11 @@ class SiteController extends Controller
 
 	}
 
+	public function contato()
+	{	
+
+		$this->view('site/contato/index.php');
+
+	}
+
 }

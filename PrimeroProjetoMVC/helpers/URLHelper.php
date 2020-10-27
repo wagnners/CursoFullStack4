@@ -13,17 +13,20 @@ class URLHelper
 	public function getURL($file = null)
 	{
 
+
 		$url = (ENV === 'dev') ? LOCAL_URL : '/';
 		$url = rtrim($url, '/');
 
 		if(is_null($file)){
+			
 			return $url;
 		}
- 
+		
 		$file = ltrim($file, '/');
 		$file = $url . '/' . $file;
 
 		return $file;
+
 
 	}
 
