@@ -152,20 +152,21 @@ body {
   padding: 30px;
 }
 
-.section4 p{
+section.contato p{
+  font-size: 25px;
   display: inline;
 }
 
-.section4 i{
+section.contato h3{
+  text-align: center;
+}
+
+section.contato i{
   font-size: 50px;
   margin-right: 10px;
 }
 
-.section4 p{
-  font-size: 25px;
-}
-
-.section4 .fa-telegram{
+section.contato .fa-telegram{
   font-size: 45px;
 }
 
