@@ -37,24 +37,17 @@ class URLHelper
 
 		$path = LOCAL_URL;
 
-		// if(ENV !== 'local' || ENV !== 'prod'){
-
-		// 	$url = str_replace(array($path, "/"), "", $url);
-
-
-		// }	
-
 		$url = ltrim($url, '/');
-
-		
 
 		if(strstr($url, '/')){
 
 			$url = explode("/", $url);
+
 			$path = $url[1];
 			return $path;
 
 		}	
+
 		return $url;
 
 	}
@@ -70,7 +63,6 @@ class URLHelper
 
 			$url = str_replace(array($path, "/"), "", $url);
 
-
 		}	
 
 
@@ -83,6 +75,7 @@ class URLHelper
 			return $path;
 
 		}	
+
 		return $url;
 
 	}

@@ -54,6 +54,7 @@
 
 	function masks(){
 		$('#form-contato #fone').mask('(99) 99999-9999');
+		$('#form-contato #cpf').mask('999.999.999-99');
 	}
 
 	$(document).ready(function() {

@@ -7,19 +7,13 @@
 * @author Code Universe
 *
 **/
-class SiteController extends Controller
+class ContatoController extends Controller
 {
 
 	public function index()
-	{		
-
-		$this->view('site/home/index.php');
-
-	}
-
-	public function contato()
 	{	
 
+		$this->setLayout('site/shared/layout.php');
 		$this->view('site/contato/index.php');
 
 	}
