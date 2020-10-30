@@ -27,7 +27,6 @@ class URLHelper
 
 		return $file;
 
-
 	}
 
 	public function getLocation()

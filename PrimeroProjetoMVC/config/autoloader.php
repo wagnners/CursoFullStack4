@@ -14,6 +14,7 @@
 * OBS: Para suporte de uma nova pasta adicione no array.
 *
 **/
+
 $paths = array(
   'controllers',
   'controllers/site/contato',

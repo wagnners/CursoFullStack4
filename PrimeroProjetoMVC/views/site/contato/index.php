@@ -1,3 +1,10 @@
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANkkbicY6l7AvWVl370rhhbN0eKWobQMs&callback=initMap&libraries=&v=weekly"
+  defer
+></script>
+
+<script type="text/javascript" src="<?php echo $url; ?>/assets/js/site/maps.js"></script>
+
 <section class="section contato">
   <h3 class="mb-3">Contato</h3>
   <div class="container pb-5">
@@ -33,6 +40,9 @@
           </div>      
         </div>
         <p>Wagner Luz</p>
+      </div>
+      <div class="col-12 mt-5" id="map" style="height: 400px;">
+        
       </div>
     </div>
   </div>

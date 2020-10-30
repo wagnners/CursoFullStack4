@@ -1,6 +1,5 @@
 <?php $url      = $this->helpers['URLHelper']->getURL(); ?>
 <?php $location = $this->helpers['URLHelper']->getLocationAdmin(); ?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -44,6 +43,8 @@
               <p>Lages - SC</p>
 
             </div>
+
+            
             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
               <h5>Redes Sociais</h5>
               <div class="row">

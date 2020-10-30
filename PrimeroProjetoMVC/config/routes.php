@@ -8,6 +8,8 @@
 *
 **/
 
+["Carro1", "Carro2"];
+
 // rotas normais
 $commonRoutes = array(
 	'/'   		=> 'HomeController/index',
