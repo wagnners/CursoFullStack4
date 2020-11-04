@@ -8,8 +8,6 @@
 *
 **/
 
-["Carro1", "Carro2"];
-
 // rotas normais
 $commonRoutes = array(
 	'/'   		=> 'HomeController/index',
@@ -19,7 +17,9 @@ $commonRoutes = array(
 );
 
 // rotas POST
-$commonPost = array();
+$commonPost = array(
+	'enviar/contato' => "ContatoSubmit/enviar"	
+);
 
 $commonRoutes = array_merge($commonRoutes, $commonPost);
 

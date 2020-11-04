@@ -15,6 +15,30 @@
 	function enviarContato(){
 		
 		var form = $("form#form-contato").serialize();
+
+		$.ajax({
+			url: "enviar/contato",
+			type: 'POST',
+			dataType: "json",
+			// data: {
+			// 	nome: $('#form-contato #nome').val(),
+			// 	fone: $('#form-contato #fone').val(),
+			// 	email: $('#form-contato #email').val(),
+			// 	mensagem:  $('#form-contato #mensagem').val(),
+			// }
+			data: form
+		}).done(function(retorno){
+			swal("Mensagem", retorno.msg, retorno.status);
+			// if(retorno.resultado == true){
+			// 	swal("Mensagem", retorno.msg, "success");
+			// }else{
+			// 	swal("Aviso", "Erro ao enviar contato.", "error");
+			// }
+
+		}).fail(function(jqXHR, textStatus, msg){
+			alert(msg);
+		})
+
 		// Passar formulário para php usando ajax
 	}
 
