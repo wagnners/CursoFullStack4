@@ -32,6 +32,7 @@ class PDOQuery
 	public function fetch($select, array $pdoValues = array())
 	{
 
+
 		$stmt = $this->pdo->prepare($select);
 		$stmt->execute($pdoValues);
 		$row  = $stmt->fetch(PDO::FETCH_ASSOC);
