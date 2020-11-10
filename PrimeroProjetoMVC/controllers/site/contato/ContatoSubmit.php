@@ -6,7 +6,7 @@ class ContatoSubmit extends Controller{
 
 
 		// $id         = 1; // Sumilação de recebimento de ID por ajax 
-		$nome 		= $_POST["nome"];
+		$nome 		= filter_var($_POST["nome"]);
 		$email 		= $_POST["email"];
 		$fone 		= $_POST["fone"];
 		$descricao 	= $_POST["mensagem"];

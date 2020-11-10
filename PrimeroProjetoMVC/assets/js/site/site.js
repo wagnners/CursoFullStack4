@@ -66,12 +66,46 @@
 		return true;
 	}
 
+	function enviarUsuario(){
+
+		var form = $("form#form-usuario").serialize();
+
+		$.ajax({
+			url: "enviar/usuario",
+			type: 'POST',
+			dataType: "json",
+			data: form
+		}).done(function(retorno){
+			swal({
+			  title: "Mensagem",
+			  text: retorno.msg,
+			  icon:  retorno.status,
+			  buttons: false,
+			  timer: 2000,
+			}).then((value) => {
+
+				if(retorno.status){
+
+					window.location = URL + "/login";
+
+				}
+				
+			});
+		}).fail(function(jqXHR, textStatus, msg){
+			alert(msg);
+		})
+	}
+
 	function clicks(){
 
 		$("#btn-enviar-contato").click(function() {
 		 	if(verificarFormContato()){
 		 		enviarContato();
 		 	}
+		});
+
+		$("#btn-enviar-usuario").click(function() {
+			enviarUsuario();
 		});
 
 	}

@@ -67,11 +67,15 @@
       </footer>
     </div>
 
+    <script type="text/javascript">
+      var URL = "<?php echo $url ?>";
+    </script>
     <script type="text/javascript" src="<?php echo $url; ?>/assets/libs/jquery/jquery-3.5.1.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="<?php echo $url; ?>/assets/libs/popper/popper.min.js"></script>
     <script type="text/javascript" src="<?php echo $url; ?>/assets/libs/bootstrap/bootstrap.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="<?php echo $url; ?>/assets/js/site/site.js"></script>
+    <script type="text/javascript" src="<?php echo $url; ?>/assets/js/site/login.js"></script>
   </body>
 </html>
