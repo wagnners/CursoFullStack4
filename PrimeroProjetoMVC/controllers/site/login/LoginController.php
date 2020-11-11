@@ -34,11 +34,12 @@ class LoginController extends Controller
 	public function verificarPassword()
 	{
 
-		$email = $_POST['email'];
-		$email = $_POST['email'];
+		$email 		= $_POST['email'];
+		$password 	= $_POST['password'];
 
-		// Chamada da classe e método na model de verificação de senha;
-
+		$verificarPassword  = new VerificarPassword;
+		$resultado 			= $verificarPassword->verificar($email, $password);
+		
 		echo json_encode(array(
 			'resultado' => $resultado
 		));

@@ -27,6 +27,8 @@
 			}
 		});
 
+		return resultado;
+
 	}
 
 
@@ -58,6 +60,8 @@
 		if(verificaEmailDB()){
 
 			if(verificaSenha()){
+
+				window.location = URL + "/dashboard";
 
 			}else{
 

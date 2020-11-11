@@ -21,6 +21,7 @@ $paths = array(
   'controllers/site/home',
   'controllers/site/registro',
   'controllers/site/login',
+  'controllers/sistema/dashboard',
   'helpers',
   'models',
   'models/db',

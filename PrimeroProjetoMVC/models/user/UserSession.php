@@ -18,12 +18,11 @@ class UserSession
 			session_start();
 
 		}
-
 	}
 
 	public function saveUser($data)
 	{
-
+		
 		$this->control();
 		$_SESSION['User'] = $data;
 		return true;
