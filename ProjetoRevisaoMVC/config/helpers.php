@@ -11,14 +11,12 @@
 // define('LOCAL_URL', '/PrimeiroProjetoFullStack');
 
 if($env == "dev"){
-	define('LOCAL_URL', '/FullStack4/PrimeroProjetoMVC'); // Aqui você arruma a pasta do seu projeto que está dentro do HTDOCS
+	define('LOCAL_URL', '/FullStack4/ProjetoRevisaoMVC');
 }
 elseif($env == "prod"){
 	define('LOCAL_URL', 'https://www.google.com.br/');
 }
 
 return array(
-	'URLHelper' 	=> new URLHelper,
-	'UserSession' 	=> new UserSession,
-	'DateConverter' => new DateConverter,
+	'URLHelper' 	=> new URLHelper(),
 );

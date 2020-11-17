@@ -14,23 +14,12 @@
 * OBS: Para suporte de uma nova pasta adicione no array.
 *
 **/
-
 $paths = array(
   'controllers',
-  'controllers/site/contato',
-  'controllers/site/home',
-  'controllers/site/registro',
-  'controllers/site/login',
-  'controllers/sistema/dashboard',
-  'controllers/sistema/tarefas',
+  'controllers/site',
   'helpers',
   'models',
   'models/db',
-  'models/user',
-  'models/contato',
-  'models/registro',
-  'models/login',
-  'models/tarefas', 
 );
 
 /**

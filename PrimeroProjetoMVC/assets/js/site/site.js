@@ -71,7 +71,7 @@
 		var form = $("form#form-usuario").serialize();
 
 		$.ajax({
-			url: "enviar/usuario",
+			url: URL + "/enviar/usuario",
 			type: 'POST',
 			dataType: "json",
 			data: form

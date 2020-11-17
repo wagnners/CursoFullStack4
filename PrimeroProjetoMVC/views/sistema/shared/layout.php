@@ -21,11 +21,11 @@
 
   <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
-      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><?php echo $this->helpers['UserSession']->get("nome"); ?></a>
+
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
+          <a class="nav-link" href="<?php echo $url ?>/sair">Sair</a>
         </li>
       </ul>
     </nav>
@@ -36,13 +36,13 @@
 		    <div class="sidebar-sticky">
 		      <ul class="nav flex-column">
 		        <li class="nav-item">
-		          <a class="nav-link active" href="#">
+		          <a class="nav-link" href="<?php echo $url ?>/dashboard">
 		            <span data-feather="home"></span>
 		            Dashboard <span class="sr-only">(current)</span>
 		          </a>
 		        </li>
 		        <li class="nav-item">
-		          <a class="nav-link" href="#">
+		          <a class="nav-link" href="<?php echo $url ?>/tarefas">
 		            <span data-feather="file"></span>
 		            Tarefas
 		          </a>
@@ -65,6 +65,7 @@
     <script type="text/javascript" src="<?php echo $url; ?>/assets/libs/popper/popper.min.js"></script>
     <script type="text/javascript" src="<?php echo $url; ?>/assets/libs/bootstrap/bootstrap.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="<?php echo $url; ?>/assets/js/sistema/tarefas.js"></script>
 
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
