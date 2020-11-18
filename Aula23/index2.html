@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 23 - AlgularJS (Parte 2 - Validações)</title>
+</head>
+<body>
+
+    <!-- <div ng-app="">
+        <form name="myForm">
+            Email:
+            <input type="email" name="myEmail" ng-model="email">
+            <span ng-show="myForm.myEmail.$error.email">Endereço de e-mail inválido.</span>
+        </form>
+    </div> -->
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <!-- <p>O nome é: {{ name | uppercase}} {{ lastName | lowercase}}</p> -->
+        <p>
+            <input type="text" ng-model="procurar">
+        </p>
+        <button ng-click="orderByMe('name')">Ordernar por nome</button>
+        <button ng-click="orderByMe('country')">Ordernar por país</button>
+        <ul>
+            <li ng-repeat="x in names | filter : procurar | orderBy: orderName">
+                Nome: {{x.name}}; País: {{x.country}}
+            </li>
+        </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script>
+
+        angular.module("myApp", []).controller('myCtrl', function($scope){
+            $scope.name     = "maria";
+            $scope.lastName = "SILVA";
+
+            $scope.names = [
+                {name : "Maria", country: "Brasil"},
+                {name : "Sandra", country: "Brasil"},
+                {name : "Kai", country: "EUA"},
+                {name : "Kai", country: "EUA"},
+                {name : "Livia", country: "Canada"},
+                {name : "Mary", country: "Canada"},
+                {name : "Antonio", country: "Uruguai"},
+                {name : "Pedro", country: "Argentina"},
+            ];
+
+            $scope.orderByMe = function(value){
+               $scope.orderName = value;
+            }
+        })
+
+    </script>
+</body>
+</html>

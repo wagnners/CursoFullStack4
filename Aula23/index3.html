@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 23 - AlgularJS (Parte 3 - Serviços)</title>
+</head>
+<body>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <p>{{location}}</p>
+        <p>{{intervalo}}</p>
+        <p>{{mensagemInicial}}</p>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+            </tr>
+            <tr ng-repeat="usuario in usuarios">
+                <td>{{usuario.nome}}</td>
+                <td>{{usuario.email}}</td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script>
+
+        angular.module("myApp", []).controller('myCtrl', function($scope, $location, $interval, $timeout, $http){
+          $scope.location = $location.absUrl();
+
+          $interval(function(){
+            $scope.intervalo = new Date().toLocaleTimeString();
+          }, 1000);
+
+          $scope.mensagemInicial = "Boa noite";
+         
+          $timeout(function(){
+            $scope.mensagemInicial = "Como está você hoje?";
+          }, 2000);
+
+          $http.get("get_tarefas.php").then(function(response){
+              $scope.usuarios = response.data.retorno;
+          })
+        })
+
+    </script>
+</body>
+</html>

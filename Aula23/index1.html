@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 23 - AlgularJS</title>
+</head>
+<body>
+    
+    <!-- <div ng-app="">
+        <p>Nome: <input type="text" ng-model="name"></p>
+        <p>{{5 + 1}}</p>
+        <p ng-bind="name"></p>
+    </div> -->
+
+    <!-- <div ng-app="" ng-init="bgColor='red'">
+        <input type="text" ng-model="bgColor">
+        <p style="background-color: {{bgColor}}">{{bgColor}} é a cor do fundo desse elemento.</p>
+    </div> -->
+
+    <!-- <div ng-app="" ng-init="qnt=2; valor=5">
+        <p>Valor em R$ <span ng-bind="qnt * valor"></span></p>
+    </div> -->
+
+    <!-- <div ng-app="" ng-init="point=[1, 15, 20, 32, 5, 25]">
+        <p ng-bind="point[2]"></p>
+        <p>{{point[4]}}</p>
+    </div> -->
+
+    <!-- <div ng-app="myApp" ng-controller="myController">
+        {{firstName + " " + lastName}}
+        <p ng-bind="firstName"></p>
+    </div> -->
+     
+    <!-- <div ng-app="myApp" ng-controller="myController">
+        <ul>
+            <li ng-repeat="x in names">
+                {{x}}
+            </li>
+        </ul>
+    </div> -->
+
+    <div ng-app="myApp" ng-controller="myController">
+        <ul>
+            <li ng-repeat="x in names">
+                Nome: {{x.name}}; País: {{x.country}}
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script>
+
+        var app = angular.module('myApp',[]);
+
+        app.controller("myController", function($scope){
+            // $scope.names = ["Mario", "Luigi", "Toddy"];
+            $scope.names = [
+                {name : "Maria", country: "Brasil"},
+                {name : "Sandra", country: "Brasil"},
+                {name : "Kai", country: "EUA"},
+            ]
+        });
+    </script>
+</body>
+</html>
