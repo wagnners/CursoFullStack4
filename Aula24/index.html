@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 24 - AlgularJS</title>
+    <style>
+        table, th, td{
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        table .head{
+            background-color: #010101;
+            color: #fff;
+            font-size: 16px;
+        }
+/* 
+        table .linha:nth-child(odd){
+            background-color: #f1f1f1;
+        }
+
+        table .linha:nth-child(even){
+            background-color: #fff;
+        } */
+        
+    </style>
+</head>
+<body>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <!-- <table>
+            <tr class="head">
+                <th>#</th>
+                <th>Nome</th>
+                <th>País</th>
+            </tr>
+            <tr ng-repeat="p in pessoas" class="linha">
+                <td>{{$index + 1}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.country}}</td>
+            </tr>
+        </table> -->
+
+        <!-- <table>
+            <tr class="head">
+                <th>Nome</th>
+                <th>País</th>
+            </tr>
+            <tr ng-repeat="p in pessoas" class="linha">
+                <td ng-if="$odd" style="background-color: #f1f1f1;">{{p.name}}</td>
+                <td ng-if="$even" style="background-color: #fff;">{{p.name}}</td>
+                <td ng-if="$odd" style="background-color: #f1f1f1;">{{p.country}}</td>
+                <td ng-if="$even" style="background-color: #fff;">{{p.country}}</td>
+            </tr>
+        </table> -->
+
+        <select>
+            <option ng-repeat="name in names" ng-value="{{$index}}">{{name}}</option>
+        </select>
+
+        <select>
+            <option ng-repeat="pessoa in pessoas" ng-value="{{pessoa.id}}">{{pessoa.name}}</option>
+        </select>
+
+        <select ng-options="pessoa.name for pessoa in pessoas track by pessoa.id" ng-model="pessoaSelected"></select>
+
+        <p>{{pessoaSelected.id}}</p>
+
+        <h2 ng-mousemove="count1 = count1 +1">Passe o mouse sobre mim</h2>
+        
+        <p> {{count1}}</p>
+
+        <button ng-click="contar()">Contar</button>
+
+        <p>{{count2}}</p>
+
+        <br>
+
+        <button ng-click="btnMostrarMenu()">Mostrar Menu</button>
+
+        <div ng-show="mostrarMenu">
+            <h3>
+                Menu
+            </h3>
+            <div>Pizza</div>
+            <div>Lasanha</div>
+            <div>Pastel</div>
+        </div>
+
+        <br>
+
+        <button ng-mousemove="getCordenada($event)">Descubra a cordenada</button>
+
+        <p>Cordenadas : {{x + ", " + y}} </p>
+
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script>
+
+        angular.module("myApp", []).controller('myCtrl', function($scope, $http){
+         
+          $http.get("get_pessoas.php").then(function(response){
+              $scope.pessoas = response.data.retorno;
+          });
+
+          $scope.names = ["Gabriel", "Gustavo", "Bruna"];
+          
+          $scope.count1 = 0;
+          $scope.count2 = 0;
+
+          $scope.contar = function(){
+                // $scope.count =  $scope.count+1;
+                $scope.count2++;
+          }
+
+          $scope.mostrarMenu = true;
+
+          $scope.btnMostrarMenu = function(){
+            $scope.mostrarMenu = !$scope.mostrarMenu;
+          }
+
+          $scope.getCordenada = function(event){
+            $scope.x = event.clientX;
+            $scope.y = event.clientY;
+          }
+
+        })
+
+    </script>
+</body>
+</html>
