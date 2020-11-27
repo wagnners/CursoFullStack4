@@ -1,0 +1,14 @@
+$corDaFonte: green;
+$corPrincipal: red;
+
+h2{
+    color: $corDaFonte;
+}
+
+h3{
+    color: $corDaFonte;
+}
+
+input, select{
+    border-color: $corPrincipal;
+}
