@@ -5,8 +5,21 @@
       <th scope="col">Nome</th>
       <th scope="col">Sobrenome</th>
       <th scope="col">Registro</th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
+    {{#each usuarios}}
+      <tr>
+        <th>{{dataValues.id}}</th>
+        <th>{{dataValues.nome}}</th>
+        <th>{{dataValues.sobrenome}}</th>
+        <th>{{moment dataValues.createdAt format="DD/MM/YYYY"}}</th>
+        <th>
+          <a class="btn btn-warning" href="/deletar/{{dataValues.id}}">Deletar</a>
+          <a class="btn btn-info" href="/atualizar/{{dataValues.id}}">Atualizar</a>
+        </th>
+      </tr>
+    {{/each}}
   </tbody>
 </table>

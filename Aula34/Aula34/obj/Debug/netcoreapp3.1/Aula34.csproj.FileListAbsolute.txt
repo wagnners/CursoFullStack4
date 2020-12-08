@@ -1,0 +1,13 @@
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\bin\Debug\netcoreapp3.1\Aula34.exe
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\bin\Debug\netcoreapp3.1\Aula34.deps.json
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\bin\Debug\netcoreapp3.1\Aula34.runtimeconfig.json
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\bin\Debug\netcoreapp3.1\Aula34.runtimeconfig.dev.json
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\bin\Debug\netcoreapp3.1\Aula34.dll
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\bin\Debug\netcoreapp3.1\Aula34.pdb
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\obj\Debug\netcoreapp3.1\Aula34.csprojAssemblyReference.cache
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\obj\Debug\netcoreapp3.1\Aula34.AssemblyInfoInputs.cache
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\obj\Debug\netcoreapp3.1\Aula34.AssemblyInfo.cs
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\obj\Debug\netcoreapp3.1\Aula34.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\obj\Debug\netcoreapp3.1\Aula34.dll
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\obj\Debug\netcoreapp3.1\Aula34.pdb
+C:\xampp\htdocs\CursoFullStack4\Aula34\Aula34\obj\Debug\netcoreapp3.1\Aula34.genruntimeconfig.cache

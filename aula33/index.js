@@ -3,6 +3,7 @@ const app = express();
 const usuario = require("./models/usuario");
 const bodyParser = require("body-parser");
 const handlebars = require("express-handlebars");
+const helpers = require('handlebars-helpers')();
 
 // template engine
 app.engine("handlebars", handlebars({defaultLayout: "main"}));
@@ -24,10 +25,6 @@ app.post("/usuarios", function(req, res){
     }).catch(function(error){
         res.send(error);
     })
-
-});
-
-app.delete("/usuarios", function(req, res){
 
 });
 
@@ -58,6 +55,53 @@ app.get("/usuarios", function(req, res){
 
     });
 
+});
+
+app.get("/atualizar/:id", function(req, res){
+    usuario.findOne({ where: { id: req.params.id }}).then(function(usuario){
+        if(usuario){
+            res.render("usuario", {usuario : usuario})
+        }else{
+            res.render("mensagem", {mensagem : "Nenhum usuário encontrado!"});
+        }
+    }).catch(function(error){
+        res.render("mensagem", {mensagem : error});
+    })
+});
+
+app.post("/alterar", function(req, res){
+
+    const { id, nome, sobrenome } = req.body;
+
+    usuario.findOne({ where: { id: id }}).then(function(_usuario){
+        
+        _usuario.nome = nome;
+        _usuario.sobrenome = sobrenome;
+
+        _usuario.save().then(function(){
+            // Mostrar mensagem
+            // res.render("mensagem", {mensagem : "Usuário atualizado!"});
+
+            //Mostrar Lista
+            usuario.findAll().then(function(usuarios){
+                res.render("usuarios", {usuarios : usuarios})
+            });
+        });
+
+    });
+    
+});
+
+app.get("/deletar/:id", function(req, res){
+    usuario.destroy({
+        where: {
+          id: req.params.id
+        }
+      }).then(function(){
+        usuario.findAll().then(function(usuarios){
+            res.render("usuarios", {usuarios : usuarios})
+        });
+      })
 });
 
 app.listen(8082, function(){
