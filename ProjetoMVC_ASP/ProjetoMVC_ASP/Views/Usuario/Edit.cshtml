@@ -1,0 +1,62 @@
+﻿<section class="section contato">
+    <h3 class="mb-3">Registro</h3>
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-12 px-5">
+                <form id="form-usuario" action="@Url.Action("Update", "Usuario")" method="post">
+                    
+                    <input type="hidden" name="id" value="@ViewBag.usuario.id" />
+
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Informe seu nome" value="@ViewBag.usuario.nome">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="cpf">CPF</label>
+                                <input type="text" class="form-control" name="cpf" id="cpf" placeholder="Informe CPF" value="@ViewBag.usuario.cpf">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="fone">Telefone</label>
+                                <input type="text" class="form-control" name="fone" id="fone" placeholder="Informe seu telefone" value="@ViewBag.usuario.fone">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="email">Endereço de E-mail</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" value="@ViewBag.usuario.email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input type="password" class="form-control" name="senha" id="senha" placeholder="Informe uma senha" >
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="conf_senha">Confirmação de Senha</label>
+                                <input type="password" class="form-control" id="conf_senha" placeholder="Informe uma senha">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-secondary" id="btn-enviar-usuario">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -3,7 +3,7 @@
     <div class="container pb-5">
         <div class="row">
             <div class="col-12 px-5">
-                <form id="form-usuario">
+                <form id="form-usuario" action="@Url.Action("Create", "Usuario")" method="post">
                     <div class="row">
                         <div class="col-8">
                             <div class="form-group">
@@ -44,16 +44,15 @@
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="conf_senha">Confirmação de Senha</label>
-                                <input type="password" class="form-control" name="conf_senha" id="conf_senha" placeholder="Informe uma senha">
+                                <input type="password" class="form-control" id="conf_senha" placeholder="Informe uma senha">
                             </div>
                         </div>
                     </div>
 
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-secondary" id="btn-enviar-usuario">Enviar</button>
+                    </div>
                 </form>
-                <div class="text-center">
-                    <button type="button" class="btn btn-secondary" id="btn-enviar-usuario">Enviar</button>
-                </div>
-
             </div>
         </div>
     </div>
