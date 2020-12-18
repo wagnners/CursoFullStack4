@@ -84,3 +84,5 @@ C:\xampp\htdocs\CursoFullStack4\ProjetoMVC_ASP\ProjetoMVC_ASP\obj\Debug\ProjetoM
 C:\xampp\htdocs\CursoFullStack4\ProjetoMVC_ASP\ProjetoMVC_ASP\obj\Debug\ProjetoMVC_ASP.csproj.CopyComplete
 C:\xampp\htdocs\CursoFullStack4\ProjetoMVC_ASP\ProjetoMVC_ASP\obj\Debug\ProjetoMVC_ASP.dll
 C:\xampp\htdocs\CursoFullStack4\ProjetoMVC_ASP\ProjetoMVC_ASP\obj\Debug\ProjetoMVC_ASP.pdb
+C:\xampp\htdocs\CursoFullStack4\ProjetoMVC_ASP\ProjetoMVC_ASP\bin\MySql.Data.dll
+C:\xampp\htdocs\CursoFullStack4\ProjetoMVC_ASP\ProjetoMVC_ASP\bin\MySql.Data.xml
